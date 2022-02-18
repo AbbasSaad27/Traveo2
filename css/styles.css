@@ -1,0 +1,391 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  font-size: 1.6rem;
+}
+
+header,
+main,
+footer {
+  width: 90vw;
+  margin: 0 auto;
+}
+
+section {
+  padding: 4rem;
+  position: relative;
+  line-height: 1.5;
+}
+
+ul {
+  list-style: none;
+}
+
+header > div:first-child {
+  background-image: url("../images/TitleSlider_Background2.png");
+  height: 80vh;
+  background-size: cover;
+  padding: 5rem;
+  font-size: 3rem;
+  font-weight: 500;
+}
+header > div:first-child p {
+  color: gray;
+  margin-bottom: 0.5rem;
+}
+
+header > div:first-child h1 {
+  font-weight: 500;
+  margin-left: 1.5rem;
+}
+
+header > div:last-child {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 6.5rem;
+}
+
+header > div:last-child h2,
+header > div:last-child p {
+  font-size: 3rem;
+  font-weight: 500;
+}
+
+section > div:first-child {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  border-bottom: 1px solid gray;
+  margin-bottom: 3rem;
+}
+section > div:first-child h2 {
+  font-weight: 500;
+}
+
+section > div:first-child div img {
+  width: 10rem;
+}
+
+section > div:first-child div p {
+  font-size: 1.2rem;
+}
+
+section > div:first-child div p,
+section ul li p:first-child {
+  text-align: center;
+  color: red;
+}
+section > div:first-child + h2 {
+  margin: 0 0 2rem;
+  font-weight: 500;
+}
+
+section > div:first-child + h2 + article {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+section > div:first-child + h2 + article > div:first-child {
+  margin-bottom: 2rem;
+}
+
+section > div:first-child + h2 + article ul li,
+section ul > li {
+  display: flex;
+  align-items: flex-start;
+}
+ul li img {
+  width: 0.6rem;
+  margin-top: 6px;
+}
+
+ul li img,
+section ul li > p:first-child {
+  margin-right: 1.5rem;
+}
+
+h3 {
+  color: rgb(172, 73, 167);
+  font-weight: 500;
+  margin-bottom: 1rem;
+}
+
+section ul li > p:first-child + div > div {
+  display: flex;
+  align-items: flex-start;
+}
+
+section ul li > p:first-child + article {
+  display: flex;
+  align-items: flex-start;
+}
+
+section ul li > p:first-child + div > div p,
+section ul li > p:first-child + article p {
+  margin-left: 0.5rem;
+}
+ul li > p:first-child + article p > span,
+ul li > p:first-child + div > div p > span {
+  color: rgb(172, 73, 167);
+}
+
+ol {
+  counter-reset: list;
+  margin-left: 2.5rem;
+}
+ol > li {
+  list-style: none;
+}
+ol > li:before {
+  color: red;
+  content: counter(list, lower-alpha) ". ";
+  counter-increment: list;
+}
+
+section ul li > p:first-child + article > img {
+  width: 1.8rem;
+  margin: 0;
+}
+
+section > div + article {
+  justify-content: space-around;
+}
+
+section > div + article,
+section > div + article + article {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+section > div + article + article {
+  justify-content: center;
+}
+
+section > div + article + article > div:first-child {
+  margin-right: 15rem;
+}
+
+section > div + article + article + div + div {
+  border-top: 2px solid gray;
+  border-bottom: 2px solid gray;
+  padding: 0.4rem 0;
+  text-align: center;
+}
+
+section > div + ul li img,
+section > div > div ul li img {
+  width: 1rem;
+  margin-top: 0.6rem;
+}
+
+ul li h2 {
+  font-weight: 500;
+}
+
+ul li span > span,
+li > img + h2 > span {
+  color: red;
+}
+
+section > div + ul + img {
+  width: 80%;
+}
+
+div > h2 span {
+  text-decoration: underline;
+}
+
+section > div + div:not(:last-child) {
+  display: flex;
+  justify-content: space-between;
+}
+
+section > div + div:not(:last-child) ul li > span {
+  font-size: 2.1rem;
+}
+
+section > div + div:last-child {
+  margin-top: 2rem;
+}
+
+section > div + div > div + div img {
+  width: 15rem;
+}
+
+h2 + div {
+  display: flex;
+  align-items: center;
+}
+
+h2 + div > div:not(:last-child) {
+  margin-right: 5rem;
+  transform: rotate(20deg);
+}
+
+h2 + div > div > p:first-child {
+  color: orange !important;
+}
+
+section:last-child > div + div {
+  display: flex;
+  justify-content: space-between;
+  width: 90%;
+}
+section:last-child > div + div > div article {
+  margin-bottom: 2rem;
+}
+
+section:last-child > div + div > div article p {
+  font-size: 1.8rem;
+}
+section:last-child > div + div > div article p > i {
+  margin-left: 1rem;
+}
+
+section:last-child span:last-child {
+  display: inline-block;
+  margin-top: 4rem;
+  font-size: 1.4rem;
+}
+
+footer {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+footer img {
+  width: 35rem;
+  margin-bottom: 8rem;
+}
+
+footer p {
+  font-size: 4rem;
+}
+
+@media only screen and (min-width: 1440px) {
+  html {
+    font-size: 65%;
+  }
+}
+@media only screen and (min-width: 1600px) {
+  html {
+    font-size: 70%;
+  }
+}
+@media only screen and (min-width: 1800px) {
+  html {
+    font-size: 75%;
+  }
+}
+@media only screen and (max-width: 1280px) {
+  html {
+    font-size: 60%;
+  }
+}
+
+@media only screen and (max-width: 1160px) {
+  html {
+    font-size: 58%;
+  }
+  section > div + article img,
+  section > div + article + article img,
+  section > div + article + article + div img {
+    width: 25rem;
+  }
+}
+
+@media only screen and (max-width: 950px) {
+  section {
+    width: 100%;
+    padding: 3rem 2rem;
+  }
+}
+
+@media only screen and (max-width: 864px) {
+  section > div + article img,
+  section > div + article + article img,
+  section > div + article + article + div img {
+    width: 20rem;
+  }
+  header > div:first-child h1 {
+    font-size: 5rem;
+  }
+}
+
+@media only screen and (max-width: 780px) {
+  section > div + article + article > div:first-child {
+    margin-right: 2rem;
+  }
+
+  section > div + div:not(:last-child) {
+    flex-direction: column;
+  }
+
+  section > div + div:not(:last-child) > div:first-child {
+    order: 2;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  header > div:last-child h2,
+  header > div:last-child p {
+    font-size: 2rem;
+  }
+
+  header > div:last-child {
+    padding: 4rem;
+  }
+  header > div:last-child > div > img {
+    width: 15rem;
+  }
+}
+
+@media only screen and (max-width: 560px) {
+  html {
+    font-size: 55%;
+  }
+  header,
+  main,
+  footer {
+    width: 95vw;
+  }
+}
+
+@media only screen and (max-width: 450px) {
+  section > div + article + article > div:first-child {
+    margin: 0;
+  }
+  header > div:first-child h1 {
+    font-size: 4rem;
+  }
+  circle,
+  rect {
+    transform: scale(0.7);
+  }
+}
+
+@media only screen and (max-width: 420px) {
+  html {
+    font-size: 45%;
+  }
+}
+
+@media only screen and (max-width: 376px) {
+  html {
+    font-size: 40%;
+  }
+}
