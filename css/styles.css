@@ -352,6 +352,25 @@ footer p {
   header > div:last-child > div > img {
     width: 15rem;
   }
+
+  footer img {
+    width: 25rem;
+    margin-bottom: 6rem;
+  }
+
+  footer p {
+    font-size: 3rem;
+  }
+
+  footer {
+    height: 70vh;
+  }
+}
+
+@media only screen and (max-width: 645px) {
+  section:last-child > div + div {
+    flex-direction: column;
+  }
 }
 
 @media only screen and (max-width: 560px) {
